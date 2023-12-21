@@ -12,7 +12,6 @@
     "github>kireque/renovate-config:semantic-commits",
     "github>kireque/renovate-config:generic-regex-manager.json5"
   ],
-  "onboarding": false,
   "requireConfig": "optional",
   "timezone": "Europe/Amsterdam",
   "dependencyDashboardTitle": "Renovate Dashboard",
