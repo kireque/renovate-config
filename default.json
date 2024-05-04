@@ -5,12 +5,12 @@
     ":dependencyDashboard",
     ":disableRateLimiting",
     "docker:enableMajor",
-    ":automergeDigest",
     ":enablePreCommit",
+    "github>kireque/renovate-config:automerge-github-actions",
     "github>kireque/renovate-config:commit-message",
     "github>kireque/renovate-config:pr-labels",
     "github>kireque/renovate-config:semantic-commits",
-    "github>kireque/renovate-config:generic-regex-manager.json5"
+    "github>kireque/renovate-config:custom-managers.json5"
   ],
   "timezone": "Europe/Amsterdam",
   "dependencyDashboardTitle": "Renovate Dashboard",
