@@ -3,18 +3,21 @@
   "extends": [
     "config:recommended",
     "docker:enableMajor",
-    ":dependencyDashboard",
-    ":disableRateLimiting",
-    ":enablePreCommit",
-    ":separatePatchReleases",
+    "helpers:pinGitHubActionDigests",
+    "github>kireque/renovate-config:custom-managers.json5",
     "github>kireque/renovate-config:automerge-github-actions",
     "github>kireque/renovate-config:commit-message",
     "github>kireque/renovate-config:pr-labels",
-    "github>kireque/renovate-config:custom-managers.json5"
+    ":dependencyDashboard",
+    ":disableRateLimiting",
+    ":enablePreCommit"
   ],
   "timezone": "Europe/Amsterdam",
   "dependencyDashboardTitle": "Renovate Dashboard",
-  "suppressNotifications": ["prIgnoreNotification"],
+  "suppressNotifications": [
+    "prEditedNotification",
+    "prIgnoreNotification"
+  ],
   "commitBodyTable": true,
   "rebaseWhen": "auto",
   "platformCommit": "enabled"
