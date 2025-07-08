@@ -7,6 +7,19 @@
       "automergeType": "branch",
       "matchUpdateTypes": ["minor", "patch", "digest"],
       "ignoreTests": true
+    },
+    {
+      "description": "Automerge trusted actions sooner",
+      "matchManagers": ["github-actions"],
+      "matchPackageNames": [
+        "/^bjw-s-labs\//",
+        "/^actions\//"
+      ],
+      "automerge": true,
+      "automergeType": "branch",
+      "matchUpdateTypes": ["minor", "patch", "digest"],
+      "minimumReleaseAge": "1 minute",
+      "ignoreTests": true
     }
   ]
 }
